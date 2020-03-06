@@ -12,10 +12,10 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import Game.Game;
 
 public class Controller implements Initializable {
 
@@ -26,11 +26,13 @@ public class Controller implements Initializable {
     @FXML
     Button loginBtn;
     String content = "Budzisz się z głębokiego snu, przypominając sobie swoje imię...";
+    Game game;
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         typing();
+        game = new Game();
     }
 
 
@@ -57,10 +59,14 @@ public class Controller implements Initializable {
     }
 
     public void loginBtnClicked() throws IOException {
-
         Parent fxmlLoader = FXMLLoader.load(getClass().getResource("./root.fxml"));
         Stage stage = (Stage) loginBtn.getScene().getWindow();
-        Scene scene = new Scene(fxmlLoader);
-        stage.setScene(scene);
+        Scene oldScn = loginBtn.getScene();
+        Scene scene = new Scene(fxmlLoader, oldScn.getWidth(), oldScn.getHeight());
+
+        if(!input.getText().isEmpty()) {
+
+            stage.setScene(scene);
+        }
     }
 }
