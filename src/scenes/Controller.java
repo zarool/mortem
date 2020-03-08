@@ -1,5 +1,6 @@
 package scenes;
 
+import Game.Game;
 import javafx.animation.Animation;
 import javafx.animation.Transition;
 import javafx.fxml.FXML;
@@ -12,10 +13,10 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import Game.Game;
 
 public class Controller implements Initializable {
 
@@ -49,7 +50,9 @@ public class Controller implements Initializable {
                 text.setText(content.substring(0, n));
 
                 if (text.getText().length() == content.length()) {
+                    input.requestFocus();
                     input.setDisable(false);
+                    loginBtn.setDisable(false);
                 }
             }
         };
@@ -64,9 +67,9 @@ public class Controller implements Initializable {
         Scene oldScn = loginBtn.getScene();
         Scene scene = new Scene(fxmlLoader, oldScn.getWidth(), oldScn.getHeight());
 
-        if(!input.getText().isEmpty()) {
-
+        if (!input.getText().isEmpty()) {
             stage.setScene(scene);
+            game.begin(input.getText());
         }
     }
 }

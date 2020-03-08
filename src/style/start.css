@@ -1,0 +1,35 @@
+.root {
+    -fx-background-color: #212121;
+}
+
+#text {
+    -fx-fill: #ffffff;
+    -fx-font-size: 21.0;
+}
+
+#input  {
+    -fx-text-fill: #d2d2d2;
+    -fx-font-size: 25.0;
+
+    -fx-background-color: none;
+    -fx-border-color: #4d4d4d;
+
+    -fx-border-insets: 30 0 40 0;
+}
+
+#startBtn {
+    -fx-text-fill: #d2d2d2;
+    -fx-font-size: 22.0;
+
+    -fx-border-color: none;
+    -fx-background-color: #636363;
+}
+
+#startBtn:hover {
+    -fx-background-color: #727272;
+}
+
+#startBtn:pressed {
+    -fx-text-fill: #eeeeee;
+    -fx-background-color: #3b3b3b;
+}
