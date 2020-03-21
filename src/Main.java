@@ -1,3 +1,4 @@
+import Game.Game;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,8 +13,8 @@ public class Main extends Application {
     public static int WIDTH = 640;
     public static int HEIGHT = 520;
 
-
     private Stage window;
+    Game game;
 
     public static void main(String[] args) {
         launch(args);
@@ -30,14 +31,12 @@ public class Main extends Application {
         window.show();
     }
 
-
-
     public Scene startup() throws IOException {
 
         Parent root = FXMLLoader.load(getClass().getResource("scenes/start.fxml"));
         Scene startup = new Scene(root, WIDTH, HEIGHT);
         startup.getStylesheets().add(getClass().getResource("style/start.css").toExternalForm());
 
-        return  startup;
+        return startup;
     }
 }

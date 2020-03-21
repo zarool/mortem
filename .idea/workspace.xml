@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d2bfcfb-02bf-4fba-b59d-1459c7d3ed21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/start.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2d2bfcfb-02bf-4fba-b59d-1459c7d3ed21" name="Default Changelist" comment="Update">
+      <change afterPath="$PROJECT_DIR$/src/scenes/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scenes/ControllerRoot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/Controller$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/Controller$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/root.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/root.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/start.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Lochy_Promki/scenes/start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/production/Lochy_Promki/scenes/start.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/ControllerStart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/root.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/root.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/start.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/root.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +35,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/zarool/mortem" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1YJb0DMuQQySAA9X6FTLwHbYzfU" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -45,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.saveactions" />
@@ -84,63 +94,82 @@
       <option name="presentableId" value="Default" />
       <updated>1582663418971</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update">
+      <created>1583711369756</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583711369756</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update">
+      <created>1583711391868</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583711391868</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="95" key="#Project_Structure" timestamp="1583255412178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="452" y="95" key="#Project_Structure/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583255412178" />
-    <state x="721" y="161" key="#com.intellij.ide.util.MemberChooser" timestamp="1583710918108">
+    <state x="721" y="161" key="#com.intellij.ide.util.MemberChooser" timestamp="1584734945825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="721" y="161" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583710918108" />
+    <state x="721" y="161" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1584734945825" />
     <state x="721" y="161" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583485894862" />
     <state x="690" y="294" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1583486227418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="294" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583486227418" />
-    <state x="806" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1583706098424">
+    <state x="806" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584306611579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="806" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583706098424" />
+    <state x="806" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1584306611579" />
     <state x="806" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583482919442" />
-    <state x="545" y="43" key="CommitChangelistDialog2" timestamp="1583711367701">
+    <state x="545" y="43" key="CommitChangelistDialog2" timestamp="1583711407437">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="545" y="43" key="CommitChangelistDialog2/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583711367701" />
+    <state x="545" y="43" key="CommitChangelistDialog2/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583711407437" />
     <state x="690" y="200" key="FileChooserDialogImpl" timestamp="1583337127383">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="200" key="FileChooserDialogImpl/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583337127383" />
-    <state width="1865" height="205" key="GridCell.Tab.0.bottom" timestamp="1583711307865">
+    <state width="1865" height="276" key="GridCell.Tab.0.bottom" timestamp="1584828313521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583711307865" />
+    <state width="1865" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1584828313521" />
     <state width="1876" height="179" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583486552651" />
-    <state width="1865" height="205" key="GridCell.Tab.0.center" timestamp="1583711307865">
+    <state width="1865" height="276" key="GridCell.Tab.0.center" timestamp="1584828313521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="205" key="GridCell.Tab.0.center/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583711307865" />
+    <state width="1865" height="276" key="GridCell.Tab.0.center/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1584828313521" />
     <state width="1876" height="179" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583486552651" />
-    <state width="1865" height="205" key="GridCell.Tab.0.left" timestamp="1583711307865">
+    <state width="1865" height="276" key="GridCell.Tab.0.left" timestamp="1584828313520">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="205" key="GridCell.Tab.0.left/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583711307865" />
+    <state width="1865" height="276" key="GridCell.Tab.0.left/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1584828313520" />
     <state width="1876" height="179" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583486552650" />
-    <state width="1865" height="205" key="GridCell.Tab.0.right" timestamp="1583711307865">
+    <state width="1865" height="276" key="GridCell.Tab.0.right" timestamp="1584828313521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="205" key="GridCell.Tab.0.right/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583711307865" />
+    <state width="1865" height="276" key="GridCell.Tab.0.right/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1584828313521" />
     <state width="1876" height="179" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583486552651" />
-    <state x="352" y="77" key="SettingsEditor" timestamp="1583352806660">
+    <state x="352" y="0" key="SettingsEditor" timestamp="1584464841109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="352" y="77" key="SettingsEditor/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583352806660" />
-    <state x="591" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1583706080531">
+    <state x="352" y="0" key="SettingsEditor/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1584464841109" />
+    <state x="591" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1584802796663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="591" y="302" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583706080531" />
+    <state x="591" y="302" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1584802796663" />
     <state x="738" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583711341235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
