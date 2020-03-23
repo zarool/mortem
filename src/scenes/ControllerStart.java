@@ -9,7 +9,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.Region;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -26,8 +25,6 @@ public class ControllerStart implements Initializable {
     Text text;
     @FXML
     Button loginBtn;
-    @FXML
-    Region region;
     String content = "Budzisz się z głębokiego snu, przypominając sobie swoje imię...";
     Game game;
 
@@ -63,7 +60,7 @@ public class ControllerStart implements Initializable {
     public void loginBtnClicked() throws IOException {
         if (!input.getText().isEmpty()) {
             setNewScene();
-            game.begin(input.getText());
+            game.getHero().setName(input.getText());
         }
     }
 

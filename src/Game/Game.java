@@ -23,19 +23,13 @@ public class Game {
         hero = new Hero(name);
     }
 
-    public void begin(String n) {
-        name = n;
-        hero.setName(name);
-    }
-
     static public String checkHeroName() throws IOException {
-        File data = new File("./src/Game/data.txt");
+        File data = new File("./src/Game/heroData.txt");
         BufferedReader br = new BufferedReader(new FileReader(data));
 
         String all;
         all = br.readLine();
         if (all == null) all = "";
-        System.out.println(all);
         return all;
     }
 

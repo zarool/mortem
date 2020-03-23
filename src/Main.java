@@ -5,6 +5,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import scenes.Context;
 
 import java.io.IOException;
 
@@ -23,6 +24,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         window = primaryStage;
+        game = Context.getInstance().getGame();
 
         window.getIcons().add(new Image(this.getClass().getResourceAsStream("assets/fire.png")));
         window.setTitle("Mortem");
@@ -32,11 +34,14 @@ public class Main extends Application {
     }
 
     public Scene startup() throws IOException {
+        Parent root = null;
 
-        Parent root = FXMLLoader.load(getClass().getResource("scenes/start.fxml"));
+        if (game.getName().isEmpty()) {
+            root = FXMLLoader.load(getClass().getResource("scenes/start.fxml"));
+        } else if (!game.getName().isEmpty()) {
+            root = FXMLLoader.load(getClass().getResource("scenes/root.fxml"));
+        }
         Scene startup = new Scene(root, WIDTH, HEIGHT);
-        startup.getStylesheets().add(getClass().getResource("style/start.css").toExternalForm());
-
         return startup;
     }
 }
