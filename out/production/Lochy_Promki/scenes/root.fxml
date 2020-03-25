@@ -14,7 +14,7 @@
         <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <center>
                 <TextArea fx:id="mainText" id="mainText" editable="false" minHeight="10.0" prefHeight="100.0"
-                          prefWidth="200.0"
+                          prefWidth="200.0" wrapText="true"
                           BorderPane.alignment="CENTER"/>
             </center>
             <bottom>

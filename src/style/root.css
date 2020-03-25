@@ -5,13 +5,23 @@
 
 #mainText {
     -fx-control-inner-background: #212121;
+
+    -fx-border-width: 2;
+    -fx-border-color:#DAA520;
+
+    -fx-font-size: 15.0;
 }
 
 #input {
+    -fx-border-color: #636363;
+    -fx-background-color: #636363;
 
+    -fx-text-fill: #efefef;
+    -fx-font-size: 17.0;
 }
 
 
 #sideBar {
-
+    -fx-border-color:#DAA520;
+    -fx-border-width: 2;
 }

@@ -36,9 +36,9 @@ public class Main extends Application {
     public Scene startup() throws IOException {
         Parent root = null;
 
-        if (game.getName().isEmpty()) {
+        if (game.getHero().getName().isEmpty()) {
             root = FXMLLoader.load(getClass().getResource("scenes/start.fxml"));
-        } else if (!game.getName().isEmpty()) {
+        } else if (!game.getHero().getName().isEmpty()) {
             root = FXMLLoader.load(getClass().getResource("scenes/root.fxml"));
         }
         Scene startup = new Scene(root, WIDTH, HEIGHT);

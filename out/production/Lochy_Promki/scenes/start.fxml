@@ -10,7 +10,8 @@
       fx:controller="scenes.ControllerStart">
     <children>
         <Text id="text" fx:id="text" lineSpacing="4.0" text="" textAlignment="CENTER"/>
-        <TextField id="input" fx:id="input" alignment="CENTER" disable="true" maxWidth="-Infinity" prefWidth="330.0"/>
+        <TextField id="input" fx:id="input" onAction="#onEnter" alignment="CENTER" disable="true" maxWidth="-Infinity"
+                   prefWidth="330.0"/>
         <Button id="startBtn" fx:id="loginBtn" onAction="#loginBtnClicked" mnemonicParsing="false" disable="true"
                 text="Zacznij podróż..."/>
     </children>

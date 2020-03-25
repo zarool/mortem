@@ -4,49 +4,63 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Game {
 
-    static public String name;
+    private Hero hero;
+    private ArrayList<String> commandNames;
+    private ArrayList<String> commandTexts;
+    private ArrayList<String> mainTexts;
 
-    static {
+    public Game() {
+        hero = new Hero();
+        commandNames = new ArrayList<String>();
+        commandTexts = new ArrayList<String>();
+        mainTexts = new ArrayList<String>();
         try {
-            name = checkHeroName();
+            readData();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public Hero hero;
-
-    public Game() {
-        hero = new Hero(name);
-    }
-
-    static public String checkHeroName() throws IOException {
-        File data = new File("./src/Game/heroData.txt");
+    private void readData() throws IOException {
+        File data = new File("./src/Game/Command.txt");
         BufferedReader br = new BufferedReader(new FileReader(data));
 
-        String all;
-        all = br.readLine();
-        if (all == null) all = "";
-        return all;
+        String currentLine;
+        while ((currentLine = br.readLine()) != null) {
+            String[] split = currentLine.split(";");
+            commandNames.add(split[0]);
+            commandTexts.add(split[1]);
+        }
+
+        File dataText = new File("./src/Game/MainText.txt");
+        BufferedReader br2 = new BufferedReader(new FileReader(dataText));
+        String line;
+        while ((line = br2.readLine()) != null) {
+            String[] split = line.split(";");
+            mainTexts.add(split[0]);
+        }
+
     }
 
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    /////getters and setters
     public Hero getHero() {
         return hero;
     }
 
-    public void setHero(Hero hero) {
-        this.hero = hero;
+    public String getMainText(int index) {
+        return mainTexts.get(index);
+    }
+
+    public String getCommandText(String input) {
+        int index = 0;
+
+        for (int i = 0; i < commandNames.size(); i++) {
+            if (commandNames.get(i).equals(input)) index = i;
+        }
+        return commandTexts.get(index);
     }
 }
