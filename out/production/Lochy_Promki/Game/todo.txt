@@ -1,0 +1,4 @@
+1. add maze to side bar with health bar and level - check
+2. add moving system through the maze - check
+3. add room randomness
+4. combat system

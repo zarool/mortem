@@ -1,5 +1,9 @@
 error;Źle wpisania komenda, popraw ją, wojowniku;
+gora;Idziesz w stronę północy;
+prawo;Kierujesz się na wschód;
+dol;Dążysz ku południu;
+lewo;Wędrujesz na zachód;
 pomoc;Mozliwe komendy do wpisania: walka, idz, seppuku;
 walka;Jeszcze z nikim nie walczysz!;
-idz;Idziesz: [1] Do przodu [2] Do tyłu;
-seppuku;Twoja psychika cię przerosła, wbijasz sztylet w brzuch, nigdy nie dopływając do Walhalii;
+idz;Idziesz: # [1] Do przodu # [2] Do tylu;
+seppuku;Twoja psychika cię przerosła, wbijasz sztylet w brzuch, nigdy nie dopływając do Walhalii. . . .;

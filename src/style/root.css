@@ -25,3 +25,16 @@
     -fx-border-color:#DAA520;
     -fx-border-width: 2;
 }
+
+#sideBar .label {
+    -fx-text-fill: #efefef;
+    -fx-text-aligment: CENTER;
+}
+
+#gridMap {
+    -fx-font-size: 13.0;
+}
+
+#gridMap .label {
+    -fx-text-fill: #efefef;
+}

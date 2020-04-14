@@ -1,1 +1,1 @@
-Drewienko;1;10;8
+Drewienko;1;10;10;8;8

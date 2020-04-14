@@ -2,36 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d2bfcfb-02bf-4fba-b59d-1459c7d3ed21" name="Default Changelist" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/Game/MainText.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Maze.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/todo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Command.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Hero.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/heroData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/heroData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/Hero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/META-INF/Lochy_Promki.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/ControllerRoot$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/ControllerRoot$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/ControllerRoot$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/ControllerRoot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/ControllerRoot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/ControllerStart$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/ControllerStart$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/ControllerStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/ControllerStart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/root.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/root.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/start.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/style/root.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/style/root.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Command.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Hero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/heroData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/heroData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/ControllerRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/ControllerRoot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/ControllerStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/ControllerStart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/root.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/root.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/start.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/root.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/root.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Lochy_Promki" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,7 +56,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -72,12 +69,13 @@
     <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Users\Abc\IdeaProjects\Lochy_Promki\src\assets" />
       <recent name="D:\Users\Abc\IdeaProjects\Lochy_Promki\src\styles" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Game" />
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager">
@@ -135,10 +133,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="683" y="304" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1585084775801" />
-    <state x="721" y="161" key="#com.intellij.ide.util.MemberChooser" timestamp="1584734945825">
+    <state x="721" y="161" key="#com.intellij.ide.util.MemberChooser" timestamp="1586642521854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="721" y="161" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1584734945825" />
+    <state x="721" y="161" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1586642521854" />
     <state x="721" y="161" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583485894862" />
     <state x="690" y="294" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1583486227418">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -149,6 +147,10 @@
     </state>
     <state x="806" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1584306611579" />
     <state x="806" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583482919442" />
+    <state x="640" y="244" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586549441402">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="244" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1586549441402" />
     <state x="545" y="43" key="CommitChangelistDialog2" timestamp="1583711407437">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -157,46 +159,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="200" key="FileChooserDialogImpl/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583337127383" />
-    <state width="1865" height="198" key="GridCell.Tab.0.bottom" timestamp="1585177179283">
+    <state width="1865" height="269" key="GridCell.Tab.0.bottom" timestamp="1586888966009">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1585177179283" />
+    <state width="1865" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1586888966009" />
     <state width="1876" height="179" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583486552651" />
-    <state width="1865" height="198" key="GridCell.Tab.0.center" timestamp="1585177179283">
+    <state width="1865" height="269" key="GridCell.Tab.0.center" timestamp="1586888966008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="198" key="GridCell.Tab.0.center/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1585177179283" />
+    <state width="1865" height="269" key="GridCell.Tab.0.center/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1586888966008" />
     <state width="1876" height="179" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583486552651" />
-    <state width="1865" height="198" key="GridCell.Tab.0.left" timestamp="1585177179282">
+    <state width="1865" height="269" key="GridCell.Tab.0.left" timestamp="1586888966008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="198" key="GridCell.Tab.0.left/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1585177179282" />
+    <state width="1865" height="269" key="GridCell.Tab.0.left/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1586888966008" />
     <state width="1876" height="179" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583486552650" />
-    <state width="1865" height="198" key="GridCell.Tab.0.right" timestamp="1585177179283">
+    <state width="1865" height="269" key="GridCell.Tab.0.right" timestamp="1586888966008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="198" key="GridCell.Tab.0.right/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1585177179283" />
+    <state width="1865" height="269" key="GridCell.Tab.0.right/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1586888966008" />
     <state width="1876" height="179" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583486552651" />
     <state x="352" y="0" key="SettingsEditor" timestamp="1584464841109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="352" y="0" key="SettingsEditor/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1584464841109" />
-    <state x="591" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1585175710738">
+    <state x="591" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1586542634404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="591" y="302" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1585175710738" />
+    <state x="591" y="302" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1586542634404" />
     <state x="738" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583711341235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="738" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583711341235" />
-    <state x="1976" y="-5" width="1456" height="812" maximized="true" key="dock-window-1" timestamp="1585116961649">
+    <state x="1920" y="2" width="1448" height="743" key="dock-window-1" timestamp="1586819046510">
       <screen x="1920" y="2" width="1440" height="900" />
     </state>
-    <state x="1976" y="-5" width="1456" height="812" maximized="true" key="dock-window-1/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1585116961649" />
+    <state x="1920" y="2" width="1448" height="743" key="dock-window-1/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1586819046510" />
     <state x="960" y="0" width="960" height="1040" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1583484048636" />
     <state x="1932" y="2" width="734" height="907" key="dock-window-2" timestamp="1584996292175">
       <screen x="1920" y="2" width="1440" height="900" />
     </state>
     <state x="1932" y="2" width="734" height="907" key="dock-window-2/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1584996292175" />
+    <state x="230" y="52" key="new project wizard" timestamp="1586359180479">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="230" y="52" key="new project wizard/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1586359180479" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1586817567378">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1586817567378" />
   </component>
 </project>
