@@ -1,6 +1,7 @@
 package Game;
 
 import java.io.*;
+import java.util.ArrayList;
 
 public class Hero {
 
@@ -12,11 +13,13 @@ public class Hero {
     private int maxStamina;
     private int x;
     private int y;
+    public ArrayList<String> dir;
 
 
     Hero(int x, int y) {
         this.x = x;
         this.y = y;
+        dir = new ArrayList<String>();
 
         try {
             readData();
@@ -26,7 +29,7 @@ public class Hero {
     }
 
     private void readData() throws IOException {
-        File data = new File("./src/Game/heroData.txt");
+        File data = new File("./src/assets/data/heroData.txt");
         BufferedReader br = new BufferedReader(new FileReader(data));
 
         String all = br.readLine();
@@ -49,6 +52,19 @@ public class Hero {
         }
 
     }
+    
+    public void addDir(ArrayList<String> words) {
+        for (String w : words) {
+            dir.add(w);
+        }
+    }
+
+    public boolean hasDir(String input) {
+        for (String d : dir) {
+            if (input.equals(d)) return true;
+        }
+        return false;
+    }
 
 
     /////getters and setters
@@ -61,17 +77,17 @@ public class Hero {
     }
 
     public void setName(String name) {
-        File file = new File("./src/Game/heroData.txt");
+        File file = new File("./src/assets/data/heroData.txt");
         FileWriter input = null;
 
         try {
             input = new FileWriter(file);
-            input.write(name + ";" + this.level + ";" + this.health + ";" + this.stamina);
+            input.write(name + ";" + this.level + ";" + this.health + ";"
+                    + this.maxHealth + ";" + this.stamina + ";" + this.maxStamina);
             input.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         this.name = name;
     }
 

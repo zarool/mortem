@@ -4,26 +4,36 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 
 public class Game {
 
+
+    //objects
     private Hero hero;
     private Maze maze;
+    private Command command;
+    private Room room;
+
+    //data
     private ArrayList<String> commandTitles;
     private ArrayList<String> commandTexts;
+    private ArrayList<String> commandMethod;
     private ArrayList<String> mainTexts;
-    private ArrayList<String> dir;
 
-    ///top, right, bottom, left
+    //variables
+    boolean isMove = false;
 
     public Game() {
         hero = new Hero(1, 1);
         maze = new Maze();
+        command = new Command(this.hero);
+
         commandTitles = new ArrayList<String>();
         commandTexts = new ArrayList<String>();
+        commandMethod = new ArrayList<String>();
         mainTexts = new ArrayList<String>();
-        dir = new ArrayList<String>();
 
         try {
             readData();
@@ -32,7 +42,6 @@ public class Game {
         }
 
         generateMaze();
-        //System.out.println(maze.getGrid());
     }
 
     public void generateMaze() {
@@ -41,7 +50,7 @@ public class Game {
     }
 
     private void readData() throws IOException {
-        File data = new File("./src/Game/Command.txt");
+        File data = new File("./src/assets/data/Command.txt");
         BufferedReader br = new BufferedReader(new FileReader(data));
 
         String currentLine;
@@ -49,9 +58,10 @@ public class Game {
             String[] split = currentLine.split(";");
             commandTitles.add(split[0]);
             commandTexts.add(split[1]);
+            commandMethod.add(split[0]);
         }
 
-        File dataText = new File("./src/Game/MainText.txt");
+        File dataText = new File("./src/assets/data/MainText.txt");
         BufferedReader br2 = new BufferedReader(new FileReader(dataText));
         String line;
         while ((line = br2.readLine()) != null) {
@@ -61,6 +71,13 @@ public class Game {
 
         String a = commandTexts.get(7).replaceAll("#", "\n");
         commandTexts.set(7, a);
+    }
+
+
+    public void room() {
+        room.generateRoom();
+
+        isMove = false;
     }
 
     /////getters and setters
@@ -76,52 +93,25 @@ public class Game {
         return mainTexts.get(index);
     }
 
-    public String getCommandText(String input) {
+    public String getCommandText(String input) throws Exception {
         int index = 0;
 
         for (int i = 0; i < commandTitles.size(); i++) {
             if (commandTitles.get(i).equals(input)) index = i;
         }
-        System.out.println(index);
-        if (checkIfMove(input) || !(0 <= index && index <= 4)) return commandTexts.get(index);
-        else return commandTexts.get(0);
 
+        if (0 < index && index < 5) isMove = true;
+        Method method = Command.class.getMethod(commandTitles.get(index), String.class);
+        return (String) method.invoke(command, commandTexts.get(index));
     }
 
-    public void checkDir(ArrayList<String> words) {
-        for (String w : words) {
-            dir.add(w);
-        }
-    }
-
-    private boolean checkIfMove(String input) {
-        for (String dir : this.dir) {
-            if (dir.equals(input)) {
-                makeMove(input);
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private void makeMove(String input) {
-        if (input.equals("gora")) {
-            hero.setY(hero.getY() - 1);
-            this.dir.clear();
-        } else if (input.equals("prawo")) {
-            hero.setX(hero.getX() + 1);
-            this.dir.clear();
-        } else if (input.equals("dol")) {
-            hero.setY(hero.getY() + 1);
-            this.dir.clear();
-        } else if (input.equals("lewo")) {
-            hero.setX(hero.getX() - 1);
-            this.dir.clear();
-        }
-        maze.updateMap(hero.getX(), hero.getY());
-    }
 
     public ArrayList<String> getMap() {
         return maze.getMap(hero.getX(), hero.getY());
     }
+
+    public boolean move() {
+        return isMove;
+    }
+
 }

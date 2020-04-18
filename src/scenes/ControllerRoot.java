@@ -43,7 +43,7 @@ public class ControllerRoot implements Initializable {
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
-                input.requestFocus();
+                input.setDisable(true);
                 setNarratorText();
                 sideBarUpdate();
 
@@ -71,6 +71,8 @@ public class ControllerRoot implements Initializable {
         setText.play();
 
         setText.setOnFinished(e -> {
+            input.setDisable(false);
+            input.requestFocus();
             runGame();
         });
     }
@@ -81,18 +83,19 @@ public class ControllerRoot implements Initializable {
 
         ArrayList<String> ways = game.getMaze().getDir(game.getHero().getX(), game.getHero().getY());
         for (int i = 0; i < ways.size(); i++) {
-            game.checkDir(ways);
-            mainText.appendText("[" + i + "] " + ways.get(i) + "\n");
+            game.getHero().addDir(ways);
+            mainText.appendText("> [" + i + "] " + ways.get(i) + "\n");
         }
     }
 
     ////typing function in controllerStart.java
 
-    public void onEnter(ActionEvent e) {
+    public void onEnter(ActionEvent e) throws Exception {
         mainText.appendText("\n>> " + input.getText());
         mainText.appendText("\n>> " + game.getCommandText(input.getText()));
         input.clear();
 
+        if (game.move()) game.room();
         sideBarUpdate();
         runGame();
     }
