@@ -1,5 +1,7 @@
 package Game;
 
+import javafx.scene.control.TextArea;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -9,12 +11,10 @@ import java.util.ArrayList;
 
 public class Game {
 
-
     //objects
     private Hero hero;
     private Maze maze;
     private Command command;
-    private Room room;
 
     //data
     private ArrayList<String> commandTitles;
@@ -68,14 +68,13 @@ public class Game {
             String[] split = line.split(";");
             mainTexts.add(split[0]);
         }
-
-        String a = commandTexts.get(7).replaceAll("#", "\n");
-        commandTexts.set(7, a);
     }
 
 
-    public void room() {
-        room.generateRoom();
+    public void room(TextArea text) {
+        Room room = new Room(text);
+        room.goToRoom(getHero());
+
 
         isMove = false;
     }
@@ -113,5 +112,4 @@ public class Game {
     public boolean move() {
         return isMove;
     }
-
 }

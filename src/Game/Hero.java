@@ -52,7 +52,7 @@ public class Hero {
         }
 
     }
-    
+
     public void addDir(ArrayList<String> words) {
         for (String w : words) {
             dir.add(w);
@@ -61,7 +61,10 @@ public class Hero {
 
     public boolean hasDir(String input) {
         for (String d : dir) {
-            if (input.equals(d)) return true;
+            if (input.equals(d)) {
+                this.dir.clear();
+                return true;
+            }
         }
         return false;
     }
@@ -121,5 +124,13 @@ public class Hero {
 
     public int getMaxStamina() {
         return this.maxStamina;
+    }
+
+    public int getLevel() {
+        return this.level;
+    }
+
+    public void gameOver() {
+        health = 0;
     }
 }

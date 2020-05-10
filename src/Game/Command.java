@@ -15,6 +15,7 @@ public class Command {
         Media sound = new Media("file:///" + System.getProperty("user.dir").replace('\\', '/')
                 + "/src/assets/music/bgsound" + soundIndex + ".mp3");
         bgMusic = new MediaPlayer(sound);
+        bgMusic.setVolume(0);
         play(bgMusic);
     }
 
@@ -66,7 +67,7 @@ public class Command {
 
     public String lewo(String msg) {
         if (hero.hasDir("lewo")) {
-            hero.setY(hero.getX() - 1);
+            hero.setX(hero.getX() - 1);
             return msg;
         } else return error("");
     }
@@ -79,11 +80,8 @@ public class Command {
         return msg;
     }
 
-    public String idz(String msg) {
-        return msg;
-    }
-
     public String seppuku(String msg) {
+        hero.gameOver();
         return msg;
     }
 

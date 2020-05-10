@@ -2,23 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d2bfcfb-02bf-4fba-b59d-1459c7d3ed21" name="Default Changelist" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/Game/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game/Monster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/music/bgsound0.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/Fight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Command.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Command.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Hero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/MainText.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/heroData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/ControllerRoot$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/ControllerRoot$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/Game/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/assets/data/Command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/assets/data/Command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/ControllerRoot$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/ControllerRoot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lochy_Promki/scenes/ControllerRoot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/data/Command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/MainText.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/data/MainText.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Maze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Monster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/heroData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/data/heroData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/data/Command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/data/Command.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/ControllerRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/ControllerRoot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,10 +143,10 @@
     </state>
     <state x="806" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1584306611579" />
     <state x="806" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583482919442" />
-    <state x="640" y="244" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586549441402">
+    <state x="640" y="244" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588277704160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="244" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1586549441402" />
+    <state x="640" y="244" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1588277704160" />
     <state x="545" y="43" key="CommitChangelistDialog2" timestamp="1583711407437">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -156,25 +155,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="200" key="FileChooserDialogImpl/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1583337127383" />
-    <state width="1865" height="247" key="GridCell.Tab.0.bottom" timestamp="1587244852772">
+    <state width="1865" height="247" key="GridCell.Tab.0.bottom" timestamp="1589037893682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="247" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1587244852772" />
+    <state width="1865" height="247" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1440.900@0.0.1920.1040" timestamp="1589037893682" />
+    <state width="1865" height="247" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1587508843943" />
     <state width="1876" height="179" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583486552651" />
-    <state width="1865" height="247" key="GridCell.Tab.0.center" timestamp="1587244852772">
+    <state width="1865" height="247" key="GridCell.Tab.0.center" timestamp="1589037893681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="247" key="GridCell.Tab.0.center/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1587244852772" />
+    <state width="1865" height="247" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1440.900@0.0.1920.1040" timestamp="1589037893681" />
+    <state width="1865" height="247" key="GridCell.Tab.0.center/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1587508843943" />
     <state width="1876" height="179" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583486552651" />
-    <state width="1865" height="247" key="GridCell.Tab.0.left" timestamp="1587244852772">
+    <state width="1865" height="247" key="GridCell.Tab.0.left" timestamp="1589037893681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="247" key="GridCell.Tab.0.left/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1587244852772" />
+    <state width="1865" height="247" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1440.900@0.0.1920.1040" timestamp="1589037893681" />
+    <state width="1865" height="247" key="GridCell.Tab.0.left/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1587508843943" />
     <state width="1876" height="179" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583486552650" />
-    <state width="1865" height="247" key="GridCell.Tab.0.right" timestamp="1587244852772">
+    <state width="1865" height="247" key="GridCell.Tab.0.right" timestamp="1589037893682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="247" key="GridCell.Tab.0.right/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1587244852772" />
+    <state width="1865" height="247" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1440.900@0.0.1920.1040" timestamp="1589037893682" />
+    <state width="1865" height="247" key="GridCell.Tab.0.right/0.0.1920.1040/1920.2.1440.900@0.0.1920.1040" timestamp="1587508843943" />
     <state width="1876" height="179" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583486552651" />
     <state x="352" y="0" key="SettingsEditor" timestamp="1584464841109">
       <screen x="0" y="0" width="1920" height="1040" />

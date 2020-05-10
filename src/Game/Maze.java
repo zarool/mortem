@@ -9,7 +9,7 @@ import java.util.Stack;
 public class Maze {
 
     //min val 3
-    final static int NUMBER = 5;
+    final static int NUMBER = 10;
     private static int cols;
     private static int rows;
 
@@ -121,10 +121,10 @@ public class Maze {
 
     }
 
-    public void fillGrid(GridPane grid) {
+    public void fillGrid(GridPane grid, int pX, int pY) {
 
-        for (int y = 0; y < this.rows; y++) {
-            for (int x = 0; x < this.cols; x++) {
+        for (int y = 0; y <= 5; y++) {
+            for (int x = 0; x <= 5; x++) {
                 String val = this.map.get(getIndex(x, y));
                 grid.add(new Label(val), x, y);
             }
@@ -137,7 +137,7 @@ public class Maze {
         return this.map;
     }
 
-    public String getGrid() {
+    public String getGridString() {
         StringBuilder string = new StringBuilder();
 
         for (int y = 0; y < this.rows; y++) {

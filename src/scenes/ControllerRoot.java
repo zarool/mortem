@@ -40,14 +40,10 @@ public class ControllerRoot implements Initializable {
         game = Context.getInstance().getGame();
 
 
-        Platform.runLater(new Runnable() {
-            @Override
-            public void run() {
-                input.setDisable(true);
-                setNarratorText();
-                sideBarUpdate();
-
-            }
+        Platform.runLater(() -> {
+            input.setDisable(true);
+            setNarratorText();
+            sideBarUpdate();
         });
     }
 
@@ -55,7 +51,7 @@ public class ControllerRoot implements Initializable {
         gridMap.getChildren().clear();
 
         game.getMaze().updateMap(game.getHero().getX(), game.getHero().getY());
-        game.getMaze().fillGrid(gridMap);
+        game.getMaze().fillGrid(gridMap, game.getHero().getX(), game.getHero().getY());
         health.setText("Health: " + game.getHero().getHealth() + " / " + game.getHero().getMaxHealth());
         stamina.setText("Stamina: " + game.getHero().getStamina() + " / " + game.getHero().getMaxStamina());
     }
@@ -82,8 +78,8 @@ public class ControllerRoot implements Initializable {
         mainText.appendText("\n> Możliwa ilość dróg do wyboru: [" + path + "]. Aby przejść dalej, wpisz: \n");
 
         ArrayList<String> ways = game.getMaze().getDir(game.getHero().getX(), game.getHero().getY());
+        game.getHero().addDir(ways);
         for (int i = 0; i < ways.size(); i++) {
-            game.getHero().addDir(ways);
             mainText.appendText("> [" + i + "] " + ways.get(i) + "\n");
         }
     }
@@ -95,9 +91,11 @@ public class ControllerRoot implements Initializable {
         mainText.appendText("\n>> " + game.getCommandText(input.getText()));
         input.clear();
 
-        if (game.move()) game.room();
+        if (game.move()) game.room(mainText);
         sideBarUpdate();
         runGame();
     }
 
+
+    /// getters
 }
